@@ -61,9 +61,9 @@ public class UserServiceImpl implements GenericService<User> {
     public User update(long id, User entityUpdated) {
         logger.info("starting update on user " + id );
         User userToUpdate = findUser(id);
-        BeanUtils.copyProperties(entityUpdated, userToUpdate, "id");
+        BeanUtils.copyProperties(entityUpdated, userToUpdate, "id", "cpfCpnj", "ag", "acc" ,"balance", "extractList", "name");
         logger.info("finishing update on user " + id );
-        return userRepository.save(entityUpdated);
+        return userRepository.save(userToUpdate);
     }
 
     @Override
