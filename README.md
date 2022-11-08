@@ -65,6 +65,14 @@ Mas caso tenha algum problema basta criar um banco de dados com o nome `github-a
 
 Feito isso, é só importar o projeto para a sua IDE favorita e testar!
 
+## Rodando com Docker
+
+Para rodar com Docker devemos criar um Docker Images através do Dockerfile.
+Para isso Rodamos o seguinte comando:
+````
+docker build --tag:hexa-lab:latest .
+````
+
 # Curiosidades
 
 ### :heavy_exclamation_mark: E o Banco para Testes?
