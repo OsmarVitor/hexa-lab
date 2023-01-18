@@ -33,7 +33,7 @@ public class UserControllerTest {
 
     @Test
     @Transactional
-    void showSaveAnUserWithBalanceIsZero() throws Exception {
+    void shouldSaveAnUserWithBalanceIsZero() throws Exception {
         mockMvc
                 .perform(post("/users").contentType(MediaType.APPLICATION_JSON)
                         .content("{\n" +
